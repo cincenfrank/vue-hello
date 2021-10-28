@@ -17,8 +17,19 @@
 
 <body>
     <header></header>
-    <main id="root">
 
+    <main id="root">
+        <div class="container my-5">
+            <div class="card bg-dark text-white">
+                <img :src="image" class="card-img rounded-3" :alt="image_alt">
+                <div class="card-img-overlay">
+                    <h1 class="card-title">{{title}}</h1>
+                    <p class="card-text">{{image_desc}}</p>
+                    <p class="card-text">{{last_update}}</p>
+                </div>
+            </div>
+            <button @click="update_date" class="btn btn-info mt-4 w-100">Click to update DateTime</button>
+        </div>
     </main>
     <footer></footer>
 </body>
